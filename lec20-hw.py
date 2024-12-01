@@ -4,7 +4,7 @@ def is_valid_brackets(s1: str) -> bool:
         '(': ')',
         '[': ']'
     }
-    for i in range(0, len(s1), 2):
+    for i in range(0, len(s1), 2):# i assumed the next char is the closure bracket
         if s1[i + 1] != my_bracket_dictionary.get(s1[i]):
             return False
     return True
